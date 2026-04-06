@@ -1,12 +1,12 @@
 # Contributing
 
-Thank you for your interest in contributing to markdown-extract!
+Thank you for your interest in contributing to md-extract!
 
 ## Development Setup
 
 ```bash
-git clone https://github.com/hyunhee-jo/markdown-extract.git
-cd markdown-extract
+git clone https://github.com/hyunhee-jo/md-extract.git
+cd md-extract
 pip install -e .
 pip install pytest pytest-socket ruff mypy
 ```

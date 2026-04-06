@@ -1,5 +1,5 @@
 <!-- AI-AGENT-SUMMARY
-name: markdown-extract
+name: md-extract
 category: Markdown parser, structured extraction
 license: MIT
 solves: [Parse Markdown files into structured data, section-level extraction]
@@ -10,9 +10,9 @@ requirements: Python 3.10+
 key-differentiators: [CLI + Python API, section filtering, frontmatter extraction, options.json SsoT]
 -->
 
-# markdown-extract
+# md-extract
 
-[![CI](https://github.com/hyunhee-jo/markdown-extract/actions/workflows/ci.yml/badge.svg)](https://github.com/hyunhee-jo/markdown-extract/actions/workflows/ci.yml)
+[![CI](https://github.com/hyunhee-jo/md-extract/actions/workflows/ci.yml/badge.svg)](https://github.com/hyunhee-jo/md-extract/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
@@ -21,7 +21,7 @@ Markdown file parser and structured extraction tool (CLI + Python API).
 ## Installation
 
 ```bash
-pip install markdown-extract
+pip install md-extract
 ```
 
 ## Quick Start
@@ -30,22 +30,22 @@ pip install markdown-extract
 
 ```bash
 # Extract as JSON
-markdown-extract extract README.md -f json
+md-extract extract README.md -f json
 
 # Extract specific sections
-markdown-extract extract docs/ -s "Installation,Usage" -f text
+md-extract extract docs/ -s "Installation,Usage" -f text
 
 # Print table of contents
-markdown-extract toc README.md
+md-extract toc README.md
 
 # Print frontmatter metadata
-markdown-extract meta blog-post.md
+md-extract meta blog-post.md
 ```
 
 ### Python API
 
 ```python
-from markdown_extract import extract
+from md_extract import extract
 
 # Basic extraction
 result = extract("README.md", format="json")

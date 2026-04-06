@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 15
     environment:
       name: pypi
-      url: https://pypi.org/p/markdown-extract
+      url: https://pypi.org/p/md-extract
     steps:
       - uses: actions/checkout@v4
 

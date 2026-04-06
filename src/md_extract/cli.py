@@ -1,11 +1,11 @@
-"""CLI entry point for markdown-extract."""
+"""CLI entry point for md-extract."""
 
 from __future__ import annotations
 
 import argparse
 import sys
 
-from markdown_extract import __version__, extract
+from md_extract import __version__, extract
 
 
 def main(argv: list[str] | None = None) -> None:

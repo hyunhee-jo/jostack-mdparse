@@ -25,7 +25,7 @@ You need Python 3.10 or later.
 ## Usage
 
 ```python
-from markdown_extract import extract
+from md_extract import extract
 
 result = extract("README.md", format="json")
 print(result)
@@ -36,7 +36,7 @@ Here is some <strong>inline HTML</strong> content.
 ## Links
 
 See [Installation Guide](./docs/install.md) for more details.
-Visit [GitHub](https://github.com/hyunhee-jo/markdown-extract) for the source code.
+Visit [GitHub](https://github.com/hyunhee-jo/md-extract) for the source code.
 
 ## Conclusion
 

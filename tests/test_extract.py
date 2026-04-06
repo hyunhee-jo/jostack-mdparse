@@ -1,4 +1,4 @@
-"""Unit tests for markdown_extract.extract."""
+"""Unit tests for md_extract.extract."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from markdown_extract.extract import (
+from md_extract.extract import (
     _flatten_lists,
     _normalize_links,
     _parse_sections,
@@ -140,7 +140,7 @@ class TestExtract:
 
     def test_exclude_code_blocks(self, sample_md: Path) -> None:
         result = extract(sample_md, format="text", quiet=True, include_code_blocks=False)
-        assert "from markdown_extract" not in result
+        assert "from md_extract" not in result
 
     def test_include_toc(self, sample_md: Path) -> None:
         result = extract(sample_md, format="json", quiet=True, include_toc=True)

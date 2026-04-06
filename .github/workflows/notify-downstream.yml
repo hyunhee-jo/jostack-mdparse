@@ -19,6 +19,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.LANGCHAIN_SYNC_TOKEN }}
-          repository: hyunhee-jo/langchain-markdown-extract
+          repository: hyunhee-jo/langchain-md-extract
           event-type: upstream-release
           client-payload: '{"version": "${{ steps.version.outputs.version }}"}'

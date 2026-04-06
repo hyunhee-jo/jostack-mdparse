@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: pip install -e . pytest pytest-socket pytest-cov
       - name: Run tests
-        run: pytest tests/ -v --disable-socket --allow-unix-socket --cov=markdown_extract --cov-report=xml
+        run: pytest tests/ -v --disable-socket --allow-unix-socket --cov=md_extract --cov-report=xml
       - name: Upload coverage
         if: matrix.python-version == '3.13'
         uses: codecov/codecov-action@v5
