@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "markdown-extract"
+version = "0.0.0"
+description = "Markdown file parser and structured extraction tool"
+authors = [{ name = "hyunhee-jo" }]
+requires-python = ">=3.10"
+readme = "README.md"
+license = "MIT"
+keywords = ["markdown", "parser", "extraction", "cli", "structured-data"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+
+[project.scripts]
+markdown-extract = "markdown_extract.cli:main"
+
+[project.urls]
+Repository = "https://github.com/hyunhee-jo/markdown-extract"
+Issues = "https://github.com/hyunhee-jo/markdown-extract/issues"
+Changelog = "https://github.com/hyunhee-jo/markdown-extract/blob/main/CHANGELOG.md"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-socket>=0.7.0",
+    "ruff>=0.9.0",
+    "mypy>=1.14",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/markdown_extract"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

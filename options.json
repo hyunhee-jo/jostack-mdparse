@@ -1,0 +1,100 @@
+{
+  "options": [
+    {
+      "name": "output-dir",
+      "shortName": "o",
+      "type": "string",
+      "required": false,
+      "default": null,
+      "description": "Directory where output files are written. Default: input file directory"
+    },
+    {
+      "name": "format",
+      "shortName": "f",
+      "type": "string",
+      "required": false,
+      "default": "json",
+      "description": "Output format. Values: json, text, html. Default: json"
+    },
+    {
+      "name": "quiet",
+      "shortName": "q",
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "Suppress console logging output"
+    },
+    {
+      "name": "heading-level",
+      "shortName": null,
+      "type": "string",
+      "required": false,
+      "default": null,
+      "description": "Filter by heading levels (comma-separated, e.g. '1,2,3'). Default: all levels"
+    },
+    {
+      "name": "sections",
+      "shortName": "s",
+      "type": "string",
+      "required": false,
+      "default": null,
+      "description": "Extract only sections matching the given heading text (comma-separated). Case-insensitive substring match"
+    },
+    {
+      "name": "include-frontmatter",
+      "shortName": null,
+      "type": "boolean",
+      "required": false,
+      "default": true,
+      "description": "Include YAML/TOML frontmatter in output. Default: true"
+    },
+    {
+      "name": "strip-html",
+      "shortName": null,
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "Strip inline HTML tags from Markdown content"
+    },
+    {
+      "name": "include-code-blocks",
+      "shortName": null,
+      "type": "boolean",
+      "required": false,
+      "default": true,
+      "description": "Include fenced code blocks in output. Default: true"
+    },
+    {
+      "name": "include-toc",
+      "shortName": null,
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "Add a generated table of contents to the output"
+    },
+    {
+      "name": "flatten-lists",
+      "shortName": null,
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "Flatten nested lists into a single level"
+    },
+    {
+      "name": "section-separator",
+      "shortName": null,
+      "type": "string",
+      "required": false,
+      "default": null,
+      "description": "Separator between sections in text output. Use %section-title% for heading text. Default: none"
+    },
+    {
+      "name": "normalize-links",
+      "shortName": null,
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "Convert relative links to absolute using the source file path"
+    }
+  ]
+}
