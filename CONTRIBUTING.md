@@ -1,12 +1,12 @@
 # Contributing
 
-Thank you for your interest in contributing to md-extract!
+Thank you for your interest in contributing to jostack-mdparse!
 
 ## Development Setup
 
 ```bash
-git clone https://github.com/hyunhee-jo/md-extract.git
-cd md-extract
+git clone https://github.com/hyunhee-jo/jostack-mdparse.git
+cd jostack-mdparse
 pip install -e .
 pip install pytest pytest-socket ruff mypy
 ```

@@ -1,17 +1,17 @@
-"""CLI entry point for md-extract."""
+"""CLI entry point for jostack-mdparse."""
 
 from __future__ import annotations
 
 import argparse
 import sys
 
-from md_extract import __version__, extract
+from jostack_mdparse import __version__, extract
 
 
 def main(argv: list[str] | None = None) -> None:
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
-        prog="markdown-extract",
+        prog="jostack-mdparse",
         description="Markdown file parser and structured extraction tool",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")

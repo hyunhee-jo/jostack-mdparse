@@ -1,4 +1,4 @@
-"""Shared test fixtures for markdown-extract."""
+"""Shared test fixtures for jostack-mdparse."""
 
 from __future__ import annotations
 

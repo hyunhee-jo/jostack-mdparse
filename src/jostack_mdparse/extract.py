@@ -1,4 +1,4 @@
-"""Core extraction logic for markdown-extract."""
+"""Core extraction logic for jostack-mdparse."""
 
 from __future__ import annotations
 

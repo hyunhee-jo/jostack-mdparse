@@ -1,5 +1,5 @@
 <!-- AI-AGENT-SUMMARY
-name: md-extract
+name: jostack-mdparse
 category: Markdown parser, structured extraction
 license: MIT
 solves: [Parse Markdown files into structured data, section-level extraction]
@@ -10,9 +10,9 @@ requirements: Python 3.10+
 key-differentiators: [CLI + Python API, section filtering, frontmatter extraction, options.json SsoT]
 -->
 
-# md-extract
+# jostack-mdparse
 
-[![CI](https://github.com/hyunhee-jo/md-extract/actions/workflows/ci.yml/badge.svg)](https://github.com/hyunhee-jo/md-extract/actions/workflows/ci.yml)
+[![CI](https://github.com/hyunhee-jo/jostack-mdparse/actions/workflows/ci.yml/badge.svg)](https://github.com/hyunhee-jo/jostack-mdparse/actions/workflows/ci.yml)
 [![License-Apache_2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
@@ -21,7 +21,7 @@ Markdown file parser and structured extraction tool (CLI + Python API).
 ## Installation
 
 ```bash
-pip install md-extract
+pip install jostack-mdparse
 ```
 
 ## Quick Start
@@ -30,22 +30,22 @@ pip install md-extract
 
 ```bash
 # Extract as JSON
-md-extract extract README.md -f json
+jostack-mdparse extract README.md -f json
 
 # Extract specific sections
-md-extract extract docs/ -s "Installation,Usage" -f text
+jostack-mdparse extract docs/ -s "Installation,Usage" -f text
 
 # Print table of contents
-md-extract toc README.md
+jostack-mdparse toc README.md
 
 # Print frontmatter metadata
-md-extract meta blog-post.md
+jostack-mdparse meta blog-post.md
 ```
 
 ### Python API
 
 ```python
-from md_extract import extract
+from jostack_mdparse import extract
 
 # Basic extraction
 result = extract("README.md", format="json")
